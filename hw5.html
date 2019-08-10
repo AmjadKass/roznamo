@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">  
+</head>
+
+<style type="text/css">
+  body{
+    background-color: black;
+    font-size: 60px
+
+  }
+
+
+
+    .circle {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+        .container {
+            display: grid;
+            grid-auto-rows: 3em;
+            grid-gap: 0px;
+            grid-template: 100% / 35% 30% 35%;
+            height: 900px;
+            grid-template-areas:
+            "h n m"
+
+            ;
+            margin-top: 50%
+        }
+        #h {
+            grid-area: h;
+            background-color: red;
+            text-align: center;
+        }
+        #n {
+            grid-area: n;
+
+            text-align: center;
+        }
+        #m {
+            grid-area: m;
+            background-color: green;
+            text-align: center;
+        }
+       
+
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template: 20% 20% / 50% 50%;
+        grid-template-areas:"n n"
+                             "h m"
+   ;
+    }
+}
+input{
+
+padding: 20px 10px;
+  width:80%;
+  text-align: right;
+  font-size: 40px;
+  border-radius: 10px;
+ text-align: center; 
+}
+</style>
+
+<body>
+    <center>
+
+        <div class="container" >
+           <div class="circle" id="h" onclick="minus()">-</div>
+          <div id="n"><input type="number" id="input-number" value="0"></div>
+            <div class="circle" id="m" onclick="plus()">+</div>
+           
+        </div>
+    </center>
+
+
+    <script type="text/javascript">
+    function minus() {
+      var x = parseInt(document.getElementById("input-number").value)
+      x = x - 1;
+      document.getElementById("input-number").value = x;
+    }
+
+    function plus() {
+      var x = parseInt(document.getElementById("input-number").value)
+      x = x + 1;
+      document.getElementById("input-number").value = x;
+    }
+
+
+
+    </script>
+</body>
+
+</html>

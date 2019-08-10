@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+
+<style type="text/css">
+        .container {
+            display: grid;
+            grid-auto-rows: 3em;
+            grid-gap: 0px;
+            grid-template: 20% 10% 60% 10% / 80% 20%;
+            height: 900px;
+            grid-template-areas:
+            "h  h"
+            "n  n"
+            "m  a"
+            "f  f"
+            ;
+        }
+        #h {
+            grid-area: h;
+            background-color: #B8336A;
+            text-align: center;
+        }
+        #n {
+            grid-area: n;
+            background-color: red;
+            text-align: center;
+        }
+        #m {
+            grid-area: m;
+            background-color: gray;
+            text-align: center;
+        }
+        #a {
+            grid-area: a;
+            background-color: orange;
+            text-align: center;
+        }
+        #f {
+            grid-area: f;
+            background-color: blue;
+            text-align: center;
+        }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template: 20% 50% 10% 10% 10% / 1fr;
+        grid-template-areas:
+         "h"
+         "m" 
+         "n" 
+         "a" 
+         "f";
+    }
+}
+</style>
+
+<body>
+    <center>
+
+        <div class="container">
+            <header id="h">header</header>
+            <nav id="n">nav</nav>
+            <main id="m">main</main>
+            <aside id="a">aside</aside>
+            <footer id="f">footer</footer>
+        </div>
+    </center>
+</body>
+
+</html>

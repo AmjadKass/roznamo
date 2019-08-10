@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>roznamo</title>
+</head>
+<style type="text/css">
+    body {
+        font-family: Helvetica;
+        font-size: 1.4em;
+        text-align: center;
+    }
+    
+    .container {
+        color: black;
+        display: grid;
+        grid-gap: 10px;
+        grid-template: repeat(4, 1fr) / repeat(5, 1fr);
+        grid-template-areas: 
+        "a1  a1  a1  a2" 
+        "a3  a4  a5  a6" 
+        "a7  a8  a9  a10" 
+        "a11 a12 a13 a14" 
+        "a15 a15 a15 a16" 
+     
+        ;
+        max-width: 500px;
+        align-items: center;
+     
+    }
+    
+    button#a1{
+        grid-area: a1;
+        background-color: blue; 
+        padding:25px 12.5px ; color:white ; font-size: 30px;
+    }
+    
+    button#a2 {
+        grid-area: a2 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px;
+    }
+    
+    button#a3 {
+        grid-area: a2 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a3 {
+        grid-area: a3 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a4 {
+        grid-area: a4 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a5 {
+        grid-area: a5 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a6 {
+        grid-area: a6 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a7 {
+        grid-area: a7 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a8 {
+        grid-area: a8 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a9 {
+        grid-area: a9 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a10 {
+        grid-area: a10 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a11 {
+        grid-area: a11 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a12 {
+        grid-area: a12 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a13 {
+        grid-area: a13 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a14 {
+        grid-area: a14 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a15 {
+        grid-area: a15 ;background-color:gray ; padding: 25px 12.5px ; color:white ; font-size: 30px; 
+    }
+    
+    button#a16 {
+        grid-area: a16 ;background-color:#01AE10 ;
+          padding:25px 12.5px ; color:white ; font-size: 30px; 
+    }    
+
+    button.field {
+        border: 2px solid black;border-radius: 5px;
+    }
+body{
+
+ color: white
+
+}
+
+input{
+
+padding: 20px 10px;
+  width:100%;
+  text-align: right;
+  font-size: 40px;
+
+}
+
+</style>
+
+<body>
+
+   
+    <center>
+
+        <input>
+
+        <div class="container">
+            <button class="field" id="a1">C</button>
+            <button class="field" id="a2">÷</button>
+            <button class="field" id="a3">7</button>
+            <button class="field" id="a4">8</button>
+            <button class="field" id="a5">9</button>
+            <button class="field" id="a6">x</button>
+            <button class="field" id="a7">4</button>
+            <button class="field" id="a8">5</button>
+            <button class="field" id="a9">6</button>
+            <button class="field" id="a10">-</button>
+            <button class="field" id="a11">1</button>
+            <button class="field" id="a12">2</button>
+            <button class="field" id="a13">3</button>
+            <button class="field" id="a14">+</button>
+            <button class="field" id="a15">0</button>
+            <button class="field" id="a16">=</button>
+
+
+        </div>
+    </center>
+</body>
+
+</html>
